@@ -10,8 +10,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.administrator.ib_cs_ia.Flight_Data">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Origin_Data"
+        android:hint="Origin Airport Code" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/Origin_Data"
+        android:layout_alignLeft="@+id/Origin_Data"
+        android:layout_alignStart="@+id/Origin_Data"
+        android:layout_marginTop="38dp"
+        android:hint="Destination Airport Code"
+        android:id="@+id/Destination_Data" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_below="@+id/Destination_Data"
+        android:layout_alignLeft="@+id/Destination_Data"
+        android:layout_alignStart="@+id/Destination_Data"
+        android:layout_marginTop="32dp"
+        android:id="@+id/Date_Data"
+        android:hint="Date of Departure" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Date_Data"
+        android:layout_toRightOf="@+id/Date_Data"
+        android:layout_toEndOf="@+id/Date_Data"
+        android:layout_marginTop="93dp"
+        android:onClick="sendData"
+        android:id="@+id/Submit_Data" />
 </RelativeLayout>
